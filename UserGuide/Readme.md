@@ -12,8 +12,9 @@
 
 ## Using the models
 1. Convert the csv generated in feature extraction process to '.arff' format. (Import the csv into Weka and save it in '.arff' format. Refer https://www.wikihow.tech/Convert-CSV-to-ARFF)
-2. The models under '2_class_arousal', '2_class_valence', '4_class' folder are built using Weka software
-3. The models under 'MultiLabel', 'MultiTarget' folder are built using Meka Sofware.
-4. Import the model into the Weka/Meka software
-5. The model parameters can be viewed in the respective software
-6. The results mentioned in "Unveiling the Influence of Modelling Approach and Gender in Subject Independent Multimodal Emotion Recognition using EOG and PPG" can be reproduced.
+2. Convert Gender and class variable column to nominal data type.
+3. The models under '2_class_arousal', '2_class_valence', '4_class' folder are built using Weka software
+4. The models under 'MultiLabel', 'MultiTarget' folder are built using Meka Sofware.
+5. Import the model into the Weka/Meka software
+6. The model parameters can be viewed in the respective software
+7. The results mentioned in "Unveiling the Influence of Modelling Approach and Gender in Subject Independent Multimodal Emotion Recognition using EOG and PPG" can be reproduced.
