@@ -7,16 +7,7 @@ from mne.time_frequency import psd_array_multitaper
 from scipy.signal import welch
 from scipy.integrate import simps
 
-"""
-*****************PREPROCESSING DONE IN DEAP********************************
-1. The data was downsampled to 128Hz.
-2. EOG artefacts were removed as in [1].
-3. A bandpass frequency filter from 4.0-45.0Hz was applied.
-4. The data was averaged to the common reference.
-5. The EEG channels were reordered so that they all follow the Geneva order as above.
-6. The data was segmented into 60 second trials and a 3 second pre-trial baseline removed.
-7. The trials were reordered from presentation order to video (Experiment_id) order.
-"""
+
 EEG_CHANNELS = {1: 'FP1', 2: 'AF3', 3: 'F3', 4: 'F7', 5: 'FC5', 6: 'FC1', 7: 'C3', 8: 'T7', 9: 'CP5', 10: 'CP1',
                 11: 'P3', 12: 'P7', 13: 'PO3', 14: 'O1', 15: 'Oz', 16: 'Pz', 17: 'Fp2', 18: 'AF4', 19: 'Fz', 20: 'F4',
                 21: 'F8', 22: 'FC6', 23: 'FC2', 24: 'Cz', 25: 'C4', 26: 'T8', 27: 'CP6', 28: 'CP2', 29: 'P4', 30: 'P8',
